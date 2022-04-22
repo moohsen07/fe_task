@@ -83,11 +83,31 @@ export default {
           left: "center",
         },
         tooltip: {
-          trigger: 'axis',
+          trigger: "axis",
           transitionDuration: 0,
           confine: false,
           hideDelay: 0,
-          padding: 0,
+        },
+        visualMap: {
+          top: 50,
+          right: 10,
+          pieces: [
+            {
+              gt: 0,
+              lte: 50,
+              color: "#D2222D",
+            },
+            {
+              gt: 50,
+              lte: 80,
+              color: "#FFBF00",
+            },
+            {
+              gt: 80,
+              lte: 100,
+              color: "#238823",
+            },
+          ],
         },
         grid: {
           left: "30px",
