@@ -42,9 +42,26 @@
 }
 
 .c-button {
+  display: flex;
   background-color: #0099ff;
   color: white;
   min-width: 120px;
   padding: 8px 16px;
   border-radius: 4px;
+
+  .c-button__loader {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-left-color: black;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: loader 0.5s linear infinite;
+
+    @keyframes loader {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
