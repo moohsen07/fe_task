@@ -55,10 +55,14 @@ export default {
           left: "center",
         },
         tooltip: {
+          backgroundColor: "#16253F",
           trigger: "axis",
           transitionDuration: 0,
-          confine: false,
+          alwaysShowContent: true,
           hideDelay: 0,
+          textStyle: {
+            color: "#fff",
+          },
         },
         visualMap: {
           top: 50,
@@ -109,6 +113,7 @@ export default {
         },
         series: [
           {
+            name: "Team Performance Index :",
             data: this.yAxisData,
             type: "line",
             symbol: "circle",
